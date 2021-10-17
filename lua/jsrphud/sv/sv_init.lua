@@ -1,8 +1,8 @@
-if (JSRPHud["Enable"]["Workshop"]) then
+if (JSRPHud["general"]["workshop"]) then
   resource.AddFile( "1393681100" )
 end
 
-if (JSRPHud["Enable"]["Resources"]) then
+if (JSRPHud["general"]["resources"]) then
   resource.AddFile("materials/azhud/azhud_agenda.png")
   resource.AddFile("materials/azhud/azhud_ammo.png")
   resource.AddFile("materials/azhud/azhud_bulletproof.png")

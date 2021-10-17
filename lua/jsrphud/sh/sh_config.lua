@@ -20,36 +20,26 @@ JSRPHud = {
 		["displayJob"] = true,
 		["jobDefaultColor"] = true,
 	},
-	["Enable"] = {
-		["Workshop"] = true,
-		["Resources"] = true,
-		["DeathScreen"] = true,
-		["Icon"] = true, // Health, Armor and Money	
-
-		// ESP
-		["Head"] = true, // Disable/Enabled ESP
-		["HeadName"] = false, // ESP player name 
-		["HeadHealth"] = true, // ESP player health
-		["HeadJob"] = false, // ESP player Job
-		["HeadTeamJobColor"] = false, // ESP player job color
-
-
-		["ResourcesEnabled"] = true,
-		["DeathScreen"] = true,
+	["general"] = {
+		["workshop"] = true,
+		["resources"] = true,
+		["deathScreen"] = true,
+		["icon"] = true, // Health, Armor and Money	
 	},
-	["Color"] = {
-		["Health"] = Color( 84, 84, 84, 200 ),
-		["Armor"] = Color( 84, 84, 84, 200 ),
-		["Money"] = Color( 84, 84, 84, 200 ),
-		["Name"] = Color( 210, 209, 208, 200 ),
-		["Job"] = Color( 210, 209, 208, 200 ),
-		["WText"] = Color( 255, 255, 255, 200 ), // Name, Armor, Money, ServerName and Rank
-		["BText"] = Color( 104, 105, 104, 200 ),
+	["color"] = {
+		["base"] = Color( 84, 84, 84, 200 ),
+		["nameBg"] = Color( 210, 209, 208, 200 ),
+		["jobBg"] = Color( 210, 209, 208, 200 ),
+		["jobText"] = Color( 104, 105, 104, 200 ),
+		["nameText"] = Color( 104, 105, 104, 200 ),
+		["iconText"] = Color( 255, 255, 255, 200 ), // Name, Armor, Money, ServerName and Rank
 		["Name&Job"] = Color( 0, 110, 255, 200 ),
-		["Death"] = Color( 0, 0, 0, 0 ),
+		["deathBg"] = Color( 0, 0, 0, 0 ),
+		["foodBar"] = Color(202, 124, 49, 255),
+		['thirstBar'] = Color(82, 122, 192, 255)
 	},
-	["Msg"] = {
-		["ServerName"] = "   Japan Roleplay",
-		["Death"] = "Vous êtes inconscient !",
+	["message"] = {
+		["serverName"] = "Japan Roleplay",
+		["death"] = "Vous êtes inconscient !",
 	}
 }

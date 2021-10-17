@@ -1,7 +1,4 @@
 local FMT = FindMetaTable("Player")
-local job = Material("AzHud/AzHud_job.png")
-local license = Material("AzHud/AzHud_license.png")
-local wanted = Material("azhud/azhud_job.png")
 	
 if (JSRPHud["esp"]["enabled"]) then
 	FMT.drawPlayerInfo = function(targ)
@@ -16,14 +13,14 @@ if (JSRPHud["esp"]["enabled"]) then
     		end  
             if (JSRPHud["esp"]["displayName"]) then
         		local name, plyTeam = targ:Nick(), targ:Team()
-        		draw.SimpleText(string.upper(name),"font_hud",pos.x + 120, pos.y - 30, JSRPHud["Color"]["WText"],TEXT_ALIGN_LEFT ,TEXT_ALIGN_CENTER)
+        		draw.SimpleText(string.upper(name),"font_hud",pos.x + 120, pos.y - 30, JSRPHud["color"]["iconText"],TEXT_ALIGN_LEFT ,TEXT_ALIGN_CENTER)
             end		
             if (JSRPHud["esp"]["displayHealth"]) then
         		local health = targ:Health()
 	        	surface.SetMaterial(Material("azhud/azhud_herts2.png"))
 	        	surface.SetDrawColor( Color( 255, 255, 255, 255 )  )
         		surface.DrawTexturedRect(pos.x + 90, pos.y -10, 24, 24)
-        		draw.SimpleText(health.."%", "font_hud", pos.x + 120, pos.y - 2, JSRPHud["Color"]["WText"], TEXT_ALIGN_LEFT, TEXT_ALIGN_CENTER)
+        		draw.SimpleText(health.."%", "font_hud", pos.x + 120, pos.y - 2, JSRPHud["color"]["iconText"], TEXT_ALIGN_LEFT, TEXT_ALIGN_CENTER)
             end
             if (JSRPHud["esp"]["displayJob"]) then
         		local Job = targ:getDarkRPVar("job") or team.GetName(targ:Team())
