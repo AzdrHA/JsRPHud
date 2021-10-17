@@ -1,0 +1,7 @@
+surface.CreateFont( "font_hud", { font = "arial", size = 16, weight = 800, } )
+surface.CreateFont( "font_hud_overhead", { font = "arial", size = 18, weight = 1000, } )
+surface.CreateFont( "font_hud_money", { font = "arial", size = 15, weight = 800, } )
+surface.CreateFont( "font_hud_lockdown", { font = "arial", size = 16, weight = 800, } )
+surface.CreateFont( "font_hud_wanted", { font = "arial", size = 16, weight = 800, } )
+surface.CreateFont( "font_hud_agenda", { font = "arial", size = 16, weight = 800, } )
+surface.CreateFont( "font_hud_death", { font = "arial", size = 30, weight = 800, } )
