@@ -1,6 +1,7 @@
 --[[---------------------------------------------------------------------------
 Display notifications
 ---------------------------------------------------------------------------]]
+
 local function DisplayNotify(msg)
     local txt = msg:ReadString()
     GAMEMODE:AddNotify(txt, msg:ReadShort(), msg:ReadLong())

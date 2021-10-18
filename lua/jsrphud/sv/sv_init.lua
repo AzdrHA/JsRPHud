@@ -16,4 +16,6 @@ if (JSRPHud["general"]["resources"]) then
   resource.AddFile("materials/azhud/azhud_name.png")
   resource.AddFile("materials/azhud/azhud_wanted.png")
   resource.AddFile("materials/azhud/azhud_weapon.png")
+  resource.AddFile("materials/azhud/jsrp_food.png")
+  resource.AddFile("materials/azhud/jsrp_thirst.png")
 end
